@@ -1,4 +1,4 @@
-## Single Responsibility Principle
+## Single Responsibility Principle (SRP)
 
 <code>"A class should have one, and only one reason to change."</code>
 
@@ -7,8 +7,6 @@
     <li>Each class or module in code should have a single purpose or responsibility.</li>
     <li>If a class have multiple responsibilities, it becomes harder to understand, maintain, and modify.</li>
 </ul>
-
-<hr/>
 
 <h2>Using SRP in Laravel</h2>
 <ul>
