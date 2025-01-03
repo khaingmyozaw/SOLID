@@ -1,23 +1,26 @@
-### Open/Closed Principle (OCP)
+# Open/Closed Principle (OCP)
 
 **"A class should be opened for extension, but closed for modification."**
 
-### Explanation
+## Explanation
+
 - **Open for extension:**
-    You should be able to add new functionality to a module without altering the existing codes.
+  You should be able to add new functionality to a module without altering the existing codes.
 - **Closed for modification:**
-    You should not modify existing, stable code when adding new features, as this could introduce bugs or regressions.
+  You should not modify existing, stable code when adding new features, as this could introduce bugs or regressions.
 
-### Using OCP in Laravel
--**Use Abstraction:**
-    Define an interface or abstract class to specify behavior. Extend it to implement new functionality without altering the base class.  
--**Use Polymorphism:**
-    Leverage polymorphism to dynamically extent functionality.
--**Leverage Dependency Injection:**
-      Inject dependencies at runtime to modify behavior without changing the underlying code.  
+## Using OCP in Laravel
 
-### Example in Laravel
-    To explore how the Open/Closed Principle is implemented, check out the following locations in the project:
+- **Use Abstraction:**
+  Define an interface or abstract class to specify behavior. Extend it to implement new functionality without altering the base class.  
+- **Use Polymorphism:**
+  Leverage polymorphism to dynamically extent functionality.
+- **Leverage Dependency Injection:**
+  Inject dependencies at runtime to modify behavior without changing the underlying code.  
+
+## Example in Laravel
+
+To explore how the Open/Closed Principle is implemented, check out the following locations in the project:
 
 - `app/Contracts/Report.php`  
 - `app/Reports/..`  
