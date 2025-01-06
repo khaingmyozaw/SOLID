@@ -14,17 +14,17 @@
 *Example:* 
 **Assume** we wanna use a `CachedUserRepository` in development to test caching logic, we can write like the following in `app/Providers/AppServiceProvider.php` for it.
 
-<code>
+```php
     $this->app->bind(UserRepositoryInterface::class, function ($app) {
         return new  CachedUserRepository($app->make(EloquentUserRepository::class));
     });
-</code>
+```
 
 Or otherwise, if we wanna switch to **production purpose**, just switch the implementation like the following.
 
-<code>
+```php
     $this->app->bind(UserRepositoryInterface::class, EloquentUserRepository::class);
-</code>
+```
 
 ## Example in Laravel
 
