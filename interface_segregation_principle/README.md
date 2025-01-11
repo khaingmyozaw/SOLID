@@ -9,11 +9,14 @@ This principle encourages designing smaller, more specific interfaces tailored t
 Imagine you have a large interface like this:
 
 ```php
-    public function registerUser(array $data);
-    public function updateUser(int $id, array $data);
-    public function deleteUser(int $id);
-    public function notifyUser(int $id, string $message);
-    public function getUserActivity(int $id);
+    interface GeneralInterface
+    {
+        public function registerUser(array $data);
+        public function updateUser(int $id, array $data);
+        public function deleteUser(int $id);
+        public function notifyUser(int $id, string $message);
+        public function getUserActivity(int $id);
+    }
 ```
 And **assume** we wanna manage about `create`, `update` and `delete` users. Here the methods ``notifyUser`` and ``getUserActivity`` are irrelevant and subclasses are foced to implement those.
 
