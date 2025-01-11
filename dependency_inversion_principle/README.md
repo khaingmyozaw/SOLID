@@ -1,6 +1,6 @@
 ### Dependency Inversion Principle (DIP)
 
-**1. High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces).**
+**1. High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces).** <br/>
 **2 Abstractions should not depend on details. Details should depend on abstractions.**
 
 ## Without DIP (Tight Coupling)
